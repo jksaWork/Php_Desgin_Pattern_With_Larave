@@ -22,5 +22,5 @@ Route::get('/', function () {
     // $factory  =new  (200);
     // $bmwinstance = $factory->CreateTayot();
     $bilder = new PageProducer (new UserPageBulider);
-    dd($bilder->ProduceThePage());
+    // dd($bilder->ProduceThePage());
 });
