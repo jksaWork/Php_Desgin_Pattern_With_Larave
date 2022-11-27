@@ -1,5 +1,10 @@
 <?php
 
+use App\Patterns\Creational\AbstractFactory\CarFactory;
+use App\Patterns\Creational\Bulider\AdminPageBulider;
+use App\Patterns\Creational\Bulider\Producer\PageProducer;
+use App\Patterns\Creational\Bulider\UserPageBulider;
+use App\Patterns\Creational\Bulider\UserPageModel;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +19,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // $factory  =new  (200);
+    // $bmwinstance = $factory->CreateTayot();
+    $bilder = new PageProducer (new UserPageBulider);
+    dd($bilder->ProduceThePage());
 });

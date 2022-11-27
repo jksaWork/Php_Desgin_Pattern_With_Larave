@@ -1,9 +1,8 @@
 <?php
-
-use App\Patterns\Creational\AbstractFactory;
+namespace App\Patterns\Creational\AbstractFactory;
 
 class CarFactory {
-    public $price;
+    public $price , $tax = 213;
     public function __construct($price)
     {
         $this->price = $price;

@@ -1,6 +1,6 @@
 <?php
 
-use App\Patterns\Creational\AbstractFactory\AbstractCarInterface;
+namespace App\Patterns\Creational\AbstractFactory;
 
 class AbstractBMW implements AbstractCarInterface {
     public $price;
