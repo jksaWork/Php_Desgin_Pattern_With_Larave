@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c61ff82cbf0142a401a48a8161e1595a",
+    "content-hash": "9fdfc4c795d4fd265749a1ed3786387c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1770,6 +1770,56 @@
                 }
             ],
             "time": "2022-07-24T11:55:47+00:00"
+        },
+        {
+            "name": "msc/basic-login",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "BasicLogin",
+                "reference": "2995bb9256f212de53775cb11f289e308d0c30a1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "BasicLogin\\": "BasicLogin"
+                }
+            },
+            "authors": [
+                {
+                    "name": "jksaWork",
+                    "email": "100087939+jksaWork@users.noreply.github.com"
+                }
+            ],
+            "description": "Try To Make Local Package With Desgin Pattern",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "msc/tokens",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "Tokens",
+                "reference": "d038fd4484c803a0abf2e295fc73a2040a62c98d"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Tokens\\": "Tokens"
+                }
+            },
+            "authors": [
+                {
+                    "name": "jksaWork",
+                    "email": "100087939+jksaWork@users.noreply.github.com"
+                }
+            ],
+            "description": "Mak Token Login To Our Desing Patern",
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "nesbot/carbon",
@@ -7704,12 +7754,15 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "msc/basic-login": 20,
+        "msc/tokens": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
         "php": "^7.3|^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.2.0"
 }

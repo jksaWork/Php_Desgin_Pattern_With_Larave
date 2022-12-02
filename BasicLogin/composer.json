@@ -1,0 +1,16 @@
+{
+    "name": "msc/basic-login",
+    "description": "Try To Make Local Package With Desgin Pattern",
+    "autoload": {
+        "psr-4": {
+            "BasicLogin\\": "BasicLogin"
+        }
+    },
+    "authors": [
+        {
+            "name": "jksaWork",
+            "email": "100087939+jksaWork@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

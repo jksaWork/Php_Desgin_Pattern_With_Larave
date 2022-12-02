@@ -1,0 +1,16 @@
+{
+    "name": "msc/tokens",
+    "description": "Mak Token Login To Our Desing Patern",
+    "autoload": {
+        "psr-4": {
+            "Tokens\\": "Tokens"
+        }
+    },
+    "authors": [
+        {
+            "name": "jksaWork",
+            "email": "100087939+jksaWork@users.noreply.github.com"
+        }
+    ],
+    "require": {}
+}

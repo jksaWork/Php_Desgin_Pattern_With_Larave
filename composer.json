@@ -10,7 +10,9 @@
         "guzzlehttp/guzzle": "^7.0.1",
         "laravel/framework": "^8.75",
         "laravel/sanctum": "^2.11",
-        "laravel/tinker": "^2.5"
+        "laravel/tinker": "^2.5",
+        "msc/basic-login": "@dev",
+        "msc/tokens": "@dev"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -58,5 +60,15 @@
         "sort-packages": true
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories" :[
+        {
+            "type" : "path",
+            "url": "BasicLogin"
+        },
+        {
+            "type" :"path",
+            "url" : "Tokens"
+        }
+    ]
 }
