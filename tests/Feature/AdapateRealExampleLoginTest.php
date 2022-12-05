@@ -35,15 +35,17 @@ class AdapateRealExampleLoginTest extends TestCase
 
     public function test_adapate_and_warper_can_i_login_with_uuser_token_and_key()
     {
-        $FirstInterface = new TokenAutiticator();
-        $basicLoginInstancec =  new TokenAuth($FirstInterface);
+        $basicLoginInstancec = $this->createMock(TokenAuth::class);
+        $basicLoginInstancec
+        ->expects($this->once())
+        ->method('login')
+        ->willReturn('test-test');
         $loginAdapter  = new AdapterLoginExample($basicLoginInstancec);
         $credtinals = [
             'key' => 'jksa',
             'value' => '123456',
         ];
         $Autnticateedresult = $loginAdapter->login($credtinals);
-        // dd($Autnticateedresult);
-        $this->assertEquals($Autnticateedresult , "amtzYXwxMjM0NTY=");
+        $this->assertEquals($Autnticateedresult , "test-test");
     }
 }
