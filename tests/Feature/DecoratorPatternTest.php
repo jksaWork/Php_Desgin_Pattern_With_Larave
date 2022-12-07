@@ -26,11 +26,11 @@ class DecoratorPatternTest extends TestCase
         $phoneDecorator->paint($phone);
 
         $BluePhonePainter = new BluePhonePainter();
-
         $phoneDecorator = new PhonePainterDecorator($BluePhonePainter);
 
         $phoneDecorator->paint($phone);
-        dd($phone);
+        // dd($phone);
+        $this->assertTrue(true);
 
     }
 }
