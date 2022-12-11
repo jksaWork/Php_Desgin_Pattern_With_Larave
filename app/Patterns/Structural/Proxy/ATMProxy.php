@@ -5,6 +5,6 @@ class ATMProxy extends BanckAccount  implements BankInterface{
     public $balance = null;
     public function getBlance(): int
     {
-            return  $this->balance = parent::getBlance();
+        return  $this->balance = parent::getBlance();
     }
 }
