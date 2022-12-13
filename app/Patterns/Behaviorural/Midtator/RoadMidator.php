@@ -9,7 +9,7 @@ class RoadMidator implements  LightStopInterFace {
     public function __construct(Road $left ,Road $right)
     {
         //  Set Road And Midator
-
+        // This Is
         $this->left = $left;
         $this->left->setMidator($this);
         $this->right = $right;

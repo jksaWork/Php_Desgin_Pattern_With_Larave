@@ -26,7 +26,6 @@ class MidatorPatternTest extends TestCase
         $raodmidaor = new MidtatorRoadMidator($left , $right);
         $raodmidaor->action($left, 'move');
         $raodmidaor->action($right, 'stop');
-        // dd($left->getStatus() , $right->getStatus());
         $this->assertEquals(true, true);
     }
 }
