@@ -24,7 +24,6 @@ class SpescficationDesginPaternTest extends TestCase
         $and  = new AndSpesficatiion($php, $js , $age);
         $cv  = new Cv(13,['php','js'],13);
         $value =$and->isStisfedBy($cv);
-        // dd($value);
         $this->assertTrue($value);
     }
 }
